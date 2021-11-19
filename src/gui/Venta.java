@@ -27,7 +27,7 @@ import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 
 public class Venta extends JFrame implements ActionListener {
-	
+	//Aqui estoy soy ivan
 	private static final long serialVersionUID = 1L;
 	
 	private JPanel contentPane;
