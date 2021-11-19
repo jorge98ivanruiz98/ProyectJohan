@@ -1,0 +1,10 @@
+332;Joaquin;4;Samsung Galaxy S10;3500.0
+332;Joaquin;2;Samsung Galaxy S10;3500.0
+331;Jean;4;iPhone 12 Pro Max;2500.0
+332;Joaquin;4;Samsung Galaxy S10;3500.0
+333;Eduardo;3;Samsung Galaxy S10;3500.0
+123;Jose;4;iPhone 12 Pro Max;2500.0
+332;Joaquin;4;Samsung Galaxy S10;3500.0
+123;Jose;3;iPhone 12 Pro Max;2500.0
+123;Jose;4;Samsung Galaxy S10;3500.0
+332;Joaquin;4;Motorola One Plus;1700.0
