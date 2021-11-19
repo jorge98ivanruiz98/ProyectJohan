@@ -53,6 +53,7 @@ public class ArregloVentas {
 				x = obtener(i);
 				linea = x.getCodigo() + ";" +
 						x.getNombre() + ";" +
+						x.getApellido() + ";" +
 				        x.getCantidad() + ";" +
 						x.getModelo() + ";" + 
 				        x.getPrecio();
@@ -77,10 +78,11 @@ public class ArregloVentas {
 				s = linea.split(";");
 				codigo = Integer.parseInt(s[0].trim());
 				nombre = s[1];
-				cantidad = Integer.parseInt(s[2].trim());
-				modelo = s[3].trim();
-				precio = Double.parseDouble(s[4].trim());
-				adicionar(new Ventas(codigo,nombre, cantidad, modelo, precio));
+				apellido = s[2];
+				cantidad = Integer.parseInt(s[3].trim());
+				modelo = s[4].trim();
+				precio = Double.parseDouble(s[5].trim());
+				adicionar(new Ventas(codigo,apellido,nombre, cantidad, modelo, precio));
 			}
 			br.close();
 		}

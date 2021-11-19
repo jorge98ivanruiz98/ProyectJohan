@@ -10,10 +10,11 @@ public class Ventas {
    
 	//  Operaciones públicas
 	
-	public Ventas(int codigo,String nombre, int cantidad, String modelo, double precio) {
+	public Ventas(int codigo,String nombre,String apellido, int cantidad, String modelo, double precio) {
 		
 		this.codigo = codigo;
 		this.nombre = nombre;
+		this.apellido = apellido;
 		this.cantidad = cantidad;
 		this.modelo = modelo;
 		this.precio = precio;
@@ -24,6 +25,12 @@ public class Ventas {
 	}
 	public void setCodigo(int codigo) {
 		this.codigo = codigo;
+	}
+	public String getApellido() {
+		return apellido;
+	}
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
 	}
 	public double getPrecio() {
 		return precio;

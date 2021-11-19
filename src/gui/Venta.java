@@ -224,12 +224,13 @@ public class Venta extends JFrame implements ActionListener {
 			Cliente x = ac.buscar(codigo);
 			if(x.getCodigo() != 0){
 				String nombre = x.getNombre();
+				String apellido = x.getApellido();
 				String modelo = leerModelo1();
 				if (cboModelo1.getSelectedIndex() >= 1) {
 					try {
 						int cantidad = leerCantidad();
 						double precio = leerPrecio();
-						Ventas nuevo = new Ventas(codigo,nombre, cantidad, modelo, precio);
+						Ventas nuevo = new Ventas(codigo,nombre,apellido, cantidad, modelo, precio);
 						aa.adicionar(nuevo);
 						listar();
 						limpieza();
@@ -271,8 +272,8 @@ public class Venta extends JFrame implements ActionListener {
 		for (int i=0; i<aa.tamanio(); i++) {
 			Object[] fila = { i + 1,
 							  aa.obtener(i).getCodigo(),
-					          ac.obtener(i).getNombre(),
-					          ac.obtener(i).getApellido(),
+					          aa.obtener(i).getNombre(),
+					          aa.obtener(i).getApellido(),
 					          aa.obtener(i).getModelo(),
 					          aa.obtener(i).getPrecio(),
 					          aa.obtener(i).getCantidad(),
