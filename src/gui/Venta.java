@@ -29,7 +29,7 @@ import javax.swing.DefaultComboBoxModel;
 public class Venta extends JFrame implements ActionListener {
 	//Aqui estoy soy ivan
 	private static final long serialVersionUID = 1L;
-	
+	//soy johan
 	private JPanel contentPane;
 	private JLabel lblCodigo;
 	private JLabel lblPrecio;
